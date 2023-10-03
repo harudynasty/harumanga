@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="manga.js"></script>
+    <link rel="stylesheet" type="text/css" href="manga.css">
+    <title>manga</title>
+</head>
+<body>
+    <div id="buttons-section">
+        <input id="locationInput" type="text" value="C:\Users\Administrator\Desktop\Manga\">
+        <button onclick="fullscreenEnter()">fullscreen</button>
+        <button onclick="fullscreenExit()">exit</button>
+        <img id="fsButton" src="fullscreen.png" onclick="fullscreen()">
+        
+        <input id="InputForImg" type="file" multiple onchange="imgloader(this)">
+        
+        <select id="marginSelect" onchange="marginChanger()">
+            <option value="none" selected>none</option>
+            <option value="small">small</option>
+            <option value="normal">normal</option>
+            <option value="big">big</option>
+        </select>
+
+    </div>
+    <div id="div1"></div>
+    <div id="upButton"></div>
+    <div id="downButton"></div>
+    
+</body>
+</html>
